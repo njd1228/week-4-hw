@@ -1,0 +1,21 @@
+.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgb(167, 62, 62);
+  }
+  
+  p {
+      color: rgb(233, 227, 227);
+    }
+    
+  
+  #titleText {
+    color: silver;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+      2px 2px 0 black;
+  }
+  
+  body {
+    background-color: rgb(230, 240, 245);
+  }
+  

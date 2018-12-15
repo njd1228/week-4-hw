@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector | Drew Mercer</title>
+
+    <!-- Link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- Link to CSS customizations-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center" id="titleText">Crystal Collector</h1>
+        <p class="text-center">At the start of the game you will be given a random number.<br>There are four crystals below. By clicking on a crystal,
+            you will add a specific amount of points to your total score dependent upon the amount of points each crystal is worth within each game.<br>You win by matching your total score
+            to the random number, you lose if your total score goes above the random number.<br>The value of each
+            crystal is unkown to you until you click on it.</p>
+
+     <p class= "text-center">The Crystal Skull Challenge   <img src="assets/images/crystal_skull.png" alt="Crystal Skull" align="middle"> Test your pyschic abilities now
+     </p>
+    
+
+    
+        <div class="row">
+
+            <!-- Random Panel -->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Number To Guess</h3>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h1><span class="glyphicon glyphicon-question-sign" style="color:aqua; width: 100%"></span></h1>
+                        <h1 class="text-center" id="random-number"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Choice Panel -->
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Select Your Crystals</h3>
+                    </div>
+                    <div class="panel-body">
+                        <input type="image" class="img gem-pic" id="blue-gem" src="assets/images/blue_gem.jpg" style="width: 24%" />
+                        <input type="image" class="img gem-pic" id="green-gem" src="assets/images/green_gem.jpg" style="width: 24%" />
+                        <input type="image" class="img gem-pic" id="orange-gem" src="assets/images/orange_gem.jpg" style="width: 24%" />
+                        <input type="image" class="img gem-pic" id="purple-gem" src="assets/images/purple_gem.jpg" style="width: 24%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Counter Panel -->
+            <div class="col-lg-5 col-lg-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Total Count This Round</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 class="text-center" id="current-count"></h1>
+                    </div>
+
+                    <div class="currentCount"></div>
+                </div>
+            </div>
+
+            <!-- Score Panel -->
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Results</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 class="text-center" id="win-count"></h1>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 class="text-center" id="loss-count"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <script source src="assets/javascript/game.js" type="text/javascript"></script>
+
+copyright 2018 Nicholas Donato
+</body>
+
+</html>
